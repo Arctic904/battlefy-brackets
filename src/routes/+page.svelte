@@ -62,7 +62,9 @@
 							y="370.93"
 							width="417.11"
 							height="77.95"
-							style={true ? 'fill: #44c5ec;' : 'fill: #1a1a1a;'}
+							style={$data[0].top.winner || $data[0].bottom.winner
+								? 'fill: #44c5ec;'
+								: 'fill: #1a1a1a;'}
 						/>
 						<text
 							id="name"
