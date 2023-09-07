@@ -138,7 +138,7 @@
 								style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 								>{$data[0].bottom.team
 									? $data[0].bottom.team.name
-									: $data[0].top.team
+									: $data[0].isBye
 									? 'Bye'
 									: ''}</text
 							>
@@ -174,11 +174,7 @@
 								data-name="name"
 								transform="translate(1073.33 313.21)"
 								style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-								>{$data[0].top.team
-									? $data[0].top.team.name
-									: $data[0].bottom.team
-									? 'Bye'
-									: ''}</text
+								>{$data[0].top.team ? $data[0].top.team.name : $data[0].isBye ? 'Bye' : ''}</text
 							>
 							<text
 								id="score-3"
@@ -279,7 +275,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[1].bottom.team
 										? $data[1].bottom.team.name
-										: $data[1].top.team
+										: $data[1].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -315,11 +311,7 @@
 									data-name="name"
 									transform="translate(711.22 520.96)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[1].top.team
-										? $data[1].top.team.name
-										: $data[1].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[1].top.team ? $data[1].top.team.name : $data[1].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-5"
@@ -357,7 +349,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[2].bottom.team
 										? $data[2].bottom.team.name
-										: $data[1].top.team
+										: $data[1].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -393,11 +385,7 @@
 									data-name="name"
 									transform="translate(711.22 105.45)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[2].top.team
-										? $data[2].top.team.name
-										: $data[2].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[2].top.team ? $data[2].top.team.name : $data[2].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-7"
@@ -559,7 +547,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[3].bottom.team
 										? $data[3].bottom.team.name
-										: $data[3].top.team
+										: $data[3].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -595,11 +583,7 @@
 									data-name="name"
 									transform="translate(349.12 676.78)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[3].top.team
-										? $data[3].top.team.name
-										: $data[3].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[3].top.team ? $data[3].top.team.name : $data[3].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-9"
@@ -637,7 +621,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[4].bottom.team
 										? $data[4].bottom.team.name
-										: $data[4].top.team
+										: $data[4].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -673,11 +657,7 @@
 									data-name="name"
 									transform="translate(349.12 469.02)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[4].top.team
-										? $data[4].top.team.name
-										: $data[4].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[4].top.team ? $data[4].top.team.name : $data[4].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-11"
@@ -715,7 +695,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[5].bottom.team
 										? $data[5].bottom.team.name
-										: $data[5].top.team
+										: $data[5].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -751,11 +731,7 @@
 									data-name="name"
 									transform="translate(349.12 261.27)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[5].top.team
-										? $data[5].top.team.name
-										: $data[5].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[5].top.team ? $data[5].top.team.name : $data[5].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-13"
@@ -793,7 +769,7 @@
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
 									>{$data[6].bottom.team
 										? $data[6].bottom.team.name
-										: $data[6].top.team
+										: $data[6].isBye
 										? 'Bye'
 										: ''}</text
 								>
@@ -829,11 +805,7 @@
 									data-name="name"
 									transform="translate(349.12 53.52)"
 									style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 22px; font-weight: 300; isolation: isolate;"
-									>{$data[6].top.team
-										? $data[6].top.team.name
-										: $data[6].bottom.team
-										? 'Bye'
-										: ''}</text
+									>{$data[6].top.team ? $data[6].top.team.name : $data[6].isBye ? 'Bye' : ''}</text
 								>
 								<text
 									id="score-15"
@@ -1115,7 +1087,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[7].bottom.team
 											? $data[7].bottom.team.name
-											: $data[7].top.team
+											: $data[7].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1152,7 +1124,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[7].top.team
 											? $data[7].top.team.name
-											: $data[7].bottom.team
+											: $data[7].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1191,7 +1163,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[8].bottom.team
 											? $data[8].bottom.team.name
-											: $data[8].top.team
+											: $data[8].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1228,7 +1200,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[8].top.team
 											? $data[8].top.team.name
-											: $data[8].bottom.team
+											: $data[8].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1267,7 +1239,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[9].bottom.team
 											? $data[9].bottom.team.name
-											: $data[9].top.team
+											: $data[9].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1304,7 +1276,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[9].top.team
 											? $data[9].top.team.name
-											: $data[9].bottom.team
+											: $data[9].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1343,7 +1315,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[10].bottom.team
 											? $data[10].bottom.team.name
-											: $data[10].top.team
+											: $data[10].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1380,7 +1352,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[10].top.team
 											? $data[10].top.team.name
-											: $data[10].bottom.team
+											: $data[10].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1419,7 +1391,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[11].bottom.team
 											? $data[11].bottom.team.name
-											: $data[11].top.team
+											: $data[11].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1456,7 +1428,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[11].top.team
 											? $data[11].top.team.name
-											: $data[11].bottom.team
+											: $data[11].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1495,7 +1467,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[12].bottom.team
 											? $data[12].bottom.team.name
-											: $data[12].top.team
+											: $data[12].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1532,7 +1504,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[12].top.team
 											? $data[12].top.team.name
-											: $data[12].bottom.team
+											: $data[12].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1571,7 +1543,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[13].bottom.team
 											? $data[13].bottom.team.name
-											: $data[13].top.team
+											: $data[13].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1608,7 +1580,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[13].top.team
 											? $data[13].top.team.name
-											: $data[13].bottom.team
+											: $data[13].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1647,7 +1619,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[14].bottom.team
 											? $data[14].bottom.team.name
-											: $data[14].top.team
+											: $data[14].isBye
 											? 'Bye'
 											: ''}</text
 									>
@@ -1682,7 +1654,7 @@
 										style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 16.48px; font-weight: 300; isolation: isolate;"
 										>{$data[14].top.team
 											? $data[14].top.team.name
-											: $data[14].bottom.team
+											: $data[14].isBye
 											? 'Bye'
 											: ''}</text
 									>
