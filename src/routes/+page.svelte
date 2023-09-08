@@ -17,6 +17,7 @@
 			}
 		);
 	});
+
 	let data = writable([] as Battlefy[]);
 	$: if (post)
 		post.json().then((json: Battlefy[]) => {
@@ -73,11 +74,9 @@
 							text-anchor="middle"
 							style="fill: #fff; font-family: Nohemi-Light, Nohemi; font-size: 50px; font-weight: 300; isolation: isolate;"
 							>{$data[0].top.winner
-								? $data[0].top.team
-									? $data[0].top.team.name
-									: ''
-								: $data[0].bottom.team
-								? $data[0].bottom.team.name
+								? $data[0].top?.team?.name || ''
+								: $data[0].bottom.winner
+								? $data[0].bottom?.team?.name || ''
 								: ''}</text
 						>
 					</g>
